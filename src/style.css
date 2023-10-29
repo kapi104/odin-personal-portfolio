@@ -24,8 +24,59 @@ body {
   z-index: 1;
 }
 
-i {
+.project-cards {
+  padding: 2rem 0;
+  display: grid;
+}
+
+.card {
+  box-shadow: 2px 2px 9px rgb(0, 0, 0);
+  width: 100%;
+}
+
+.project-screenshot {
+  overflow: hidden;
+}
+
+.project-screenshot img {
+  width: 100%;
+  transition: transform 0.2s;
+}
+
+.project-screenshot img:hover {
+  transform: scale(1.1);
+}
+
+.card-desc {
+  padding: 0.7rem;
+  box-sizing: border-box;
+}
+
+.project-cards a {
+  text-decoration: none;
   color: black;
+}
+
+.project-title {
+  font-size: 1.3rem;
+  margin: 0 0 1rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-title h3 {
+  font-size: 1em;
+  font-weight: 500;
+  margin: 0;
+}
+
+.project-title svg {
+  height: 1em;
+  transition: transform 0.2s;
+}
+
+.project-title svg:hover {
+  transform: scale(1.1);
 }
 
 @media (max-width: 480px) {
@@ -56,7 +107,7 @@ i {
     text-shadow: 2px 2px 8px rgb(0, 0, 0);
   }
 
-  .about-me h1 {
+  h1 {
     font-weight: 500;
     margin: 0 auto;
     text-align: center;
@@ -77,5 +128,14 @@ i {
   .link-icons svg {
     height: 3rem;
     fill: black;
+  }
+
+  main {
+    padding: 4rem 1.3rem;
+  }
+
+  .project-cards {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
   }
 }
