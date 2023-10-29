@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;700&display=swap');
 
 :root {
   font-family: 'Inter', sans-serif;
@@ -24,6 +24,10 @@ body {
   z-index: 1;
 }
 
+i {
+  color: black;
+}
+
 @media (max-width: 480px) {
   header {
     display: flex;
@@ -31,12 +35,12 @@ body {
     align-items: center;
   }
 
-  header picture {
+  .profile-picture {
     width: 100%;
     position: relative;
   }
 
-  header img {
+  .profile-picture img {
     width: calc(100% - 4rem);
     margin: 2rem;
     box-shadow: 2px 2px 15px rgb(0, 0, 0);
@@ -44,11 +48,34 @@ body {
 
   header span {
     position: absolute;
-    bottom: 3.7rem;
+    bottom: 2.6rem;
     left: 3rem;
     z-index: 2;
     color: aliceblue;
     font-size: 4rem;
     text-shadow: 2px 2px 8px rgb(0, 0, 0);
+  }
+
+  .about-me h1 {
+    font-weight: 500;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .about-me p {
+    padding: 0 1.3rem;
+    font-size: 1.3rem;
+  }
+
+  .link-icons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .link-icons img,
+  .link-icons svg {
+    height: 3rem;
+    fill: black;
   }
 }
