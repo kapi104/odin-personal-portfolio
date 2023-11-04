@@ -33,7 +33,7 @@ body {
 .project-cards {
   padding: 2rem 0;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1.5rem;
 }
 
@@ -89,78 +89,75 @@ body {
 
 footer {
   background-color: rgb(0, 162, 255);
+  padding: 1.3rem;
 }
 
-/* @media (max-width: 480px) { */
-  header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-  .profile-picture {
-    width: 100%;
-    position: relative;
-  }
+.profile-picture {
+  width: 100%;
+  position: relative;
+}
 
-  .profile-picture img {
-    width: calc(100% - 4rem);
-    margin: 2rem;
-    box-shadow: 2px 2px 15px rgb(0, 0, 0);
-  }
+.profile-picture img {
+  width: calc(100% - 4rem);
+  margin: 2rem;
+  box-shadow: 2px 2px 15px rgb(0, 0, 0);
+}
 
-  header span {
-    position: absolute;
-    bottom: 2.6rem;
-    left: 3rem;
-    z-index: 2;
-    color: aliceblue;
-    font-size: 4rem;
-    text-shadow: 2px 2px 8px rgb(0, 0, 0);
-  }
+header span {
+  position: absolute;
+  bottom: 2.6rem;
+  left: 3rem;
+  z-index: 2;
+  color: aliceblue;
+  font-size: 4rem;
+  text-shadow: 2px 2px 8px rgb(0, 0, 0);
+}
 
-  h1 {
-    font-weight: 500;
-    margin: 0 auto;
-    text-align: center;
-  }
+h1 {
+  font-weight: 500;
+  margin: 0 auto;
+  text-align: center;
+}
 
-  .about-me p {
-    padding: 0 1.3rem;
-    font-size: 1.3rem;
-  }
+.about-me p {
+  padding: 0 1.3rem;
+  font-size: 1.3rem;
+}
 
-  .link-icons {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-  }
+.link-icons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
 
-  main {
-    padding: 4rem 1.3rem;
-  }
+main {
+  padding: 4rem 1.3rem;
+}
 
-  /* .project-cards {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-  } */
+footer > p {
+  margin-bottom: 0;
+}
 
-  footer {
-    padding: 1.3rem;
-  }
+.contact-info {
+  padding: 0.6rem 0;
+  font-size: 0.8rem;
+}
 
-  footer > p {
-    margin-bottom: 0;
-  }
+footer .link-icons {
+  padding-bottom: 1.3rem;
+}
 
-  .contact-info {
-    padding: 0.6rem 0;
-    font-size: 0.8rem;
-  }
-/* } */
+footer img {
+  width: calc(100% + 2.6rem);
+  margin-left: -1.3rem;
+  margin-bottom: -1.6rem;
+}
 
 @media (min-width: 480px) and (max-width: 1100px) {
-  body {
-    background-color: green;
-  }
 }
