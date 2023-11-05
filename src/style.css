@@ -83,13 +83,13 @@ h1 {
 }
 
 main {
-  padding: 4rem 1rem;
+  padding: 4rem 1.3rem;
 }
 
 .project-cards {
   padding: 2rem 0;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 1.5rem;
 }
 
@@ -145,6 +145,7 @@ main {
 
 footer {
   background-color: rgb(0, 162, 255);
+  color: white;
   padding: 1.3rem;
 }
 
@@ -259,7 +260,20 @@ footer img {
   }
 }
 
+@media (min-width: 500px) and (max-width: 700px) {
+  header span {
+    font-size: 3rem;
+  }
+}
+
 @media (min-width: 1125px) {
+  .project-cards {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+  }
+}
+
+@media (min-width: 1160px) {
   .about-me > span {
     display: none;
   }
@@ -280,6 +294,7 @@ footer img {
   .profile-picture {
     position: relative;
     width: 100%;
+    z-index: 3;
   }
 
   .profile-picture img {
@@ -288,14 +303,29 @@ footer img {
     top: -2rem;
     margin: 0;
     left: 0rem;
+    z-index: 3;
   }
 
-  .about-me-panel {
+  .profile-picture span {
+    left: 1rem;
+    font-size: 3rem;
+    z-index: 4;
+  }
+
+  .my-description {
     box-shadow: 3px 3px 14px rgb(0, 0, 0);
   }
 
-  .project-cards {
-    grid-template-columns: repeat(3, 1fr);
+  .about-me-panel {
+    padding: 2rem;
+  }
+
+  header .link-icons {
+    justify-content: end;
+  }
+
+  main h1 {
+    text-align: start;
   }
 
   .footer-back {
@@ -323,7 +353,7 @@ footer img {
     font-size: 1rem;
   }
 
-  .link-icons {
+  footer .link-icons {
     justify-content: start;
   }
 
